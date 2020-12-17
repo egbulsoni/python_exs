@@ -14,17 +14,17 @@ def fibo_tail(n, res = 0):
         return res + 1
     return fibo_tail(n-1) + fibo_tail(n-2)
 
-def fact(n):
-    if (n <= 1):
+def factorial(num):
+	if (n <= 1):
         return 1
-    else:
-        return n * fact(n-1)
+	return num * factorial(num-1)
+    
     
 def fact_tail(n, res=1):
     if (n <= 1):
         return res
-    else:
-        return fact_tail(n-1,res*n)
+    return fact_tail(n-1,res*n)
+    
 it = 10
 start = time.time()
 print(fibo(it))
